@@ -44,7 +44,7 @@ Instructions and examples on how to use the project. Include any relevant code s
 
 (sonarqube results)
 
-# Unit Testing and Code Coverage
+## Unit Testing and Code Coverage
 
 (unit tests, Coverage.py for python)
 
