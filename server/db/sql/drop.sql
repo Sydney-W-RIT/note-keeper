@@ -1,0 +1,4 @@
+DROP TABLE IF EXISTS notes;
+DROP TABLE IF EXISTS daily_schedule;
+DROP TABLE IF EXISTS flashcards;
+DROP TABLE IF EXISTS pomodoro_timer;
