@@ -55,7 +55,7 @@ class Test_Flashcards(unittest.TestCase):
     #     actual = db_utils.exec_get_one(query, ("Computer Science",))
     #     self.assertEqual(actual, expected)
 
-    def test_delete_flashcar(self):
+    def test_delete_flashcard(self):
         flashcards.delete_flashcard("Mitochondria")
         query = """
         SELECT solution

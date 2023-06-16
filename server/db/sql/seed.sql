@@ -3,8 +3,9 @@ VALUES ('Mitochondria', 'Powerhouse of the cell', 'Biology'),
        ('RAM', 'Random Access Memory', 'Computer Science'), 
        ('Aglet', 'Plastic at the end of a shoelace', 'Miscellaneous');
 
--- INSERT INTO notes (title, content)
--- VALUES ("title", "content");
+INSERT INTO notes (title, content)
+VALUES ('Homework', 'Physics, Web Engineering'),
+       ('To Do', 'Take cat for a walk');
 
 -- INSERT INTO daily_schedule (task) 
 -- VALUES ("start")
