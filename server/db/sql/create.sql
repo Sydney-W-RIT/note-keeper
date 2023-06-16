@@ -15,6 +15,7 @@ SELECT generate_series(1, 24) AS hour_of_day;
 ALTER TABLE daily_schedule
 ADD COLUMN task TEXT;
 
+-- make term unique?
 CREATE TABLE flashcards (
     id SERIAL NOT NULL, 
     term TEXT NOT NULL, 
