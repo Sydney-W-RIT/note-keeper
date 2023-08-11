@@ -37,16 +37,16 @@ def update_flashcard_solution(solution, new_solution):
 
 # again, might want to change to given term, especially if term is made a unique identifier
 # *DECISION*: either a) add term as a secondary identifier or b) get rid of functionality entirely
-# def update_flashcard_topic(topic, new_topic):
-#     """
-#     Changes the topic associated with the flashcard.
-#     """
-#     query = """
-#     UPDATE flashcards
-#     SET topic = %s
-#     WHERE topic = %s
-#     """
-#     exec_commit(query, (new_topic, topic,))
+def update_flashcard_topic(topic, new_topic):
+    """
+    Changes the topic associated with the flashcard.
+    """
+    query = """
+    UPDATE flashcards
+    SET topic = %s
+    WHERE topic = %s
+    """
+    exec_commit(query, (new_topic, topic,))
 
 def delete_flashcard(term):
     """

@@ -44,16 +44,16 @@ class Test_Flashcards(unittest.TestCase):
         self.assertEqual(actual, expected)
 
     # IMPORTANT: update topic will *likely* need a secondary identifier, since you'll likely not want to change the topic for all cards of a topic
-    # def test_update_flashcard_topic(self):
-    #     flashcards.update_flashcard_topic("Computer Science", "Software Engineering")
-    #     query = """
-    #     SELECT term
-    #     FROM flashcards
-    #     WHERE topic=%s 
-    #     """
-    #     expected = "Software Engineering"
-    #     actual = db_utils.exec_get_one(query, ("Computer Science",))
-    #     self.assertEqual(actual, expected)
+    def test_update_flashcard_topic(self):
+        flashcards.update_flashcard_topic("Computer Science", "Software Engineering")
+        query = """
+        SELECT term
+        FROM flashcards
+        WHERE topic=%s 
+        """
+        expected = "RAM"
+        actual = db_utils.exec_get_one(query, ("Software Engineering",))[0]
+        self.assertEqual(actual, expected)
 
     def test_delete_flashcard(self):
         flashcards.delete_flashcard("Mitochondria")
